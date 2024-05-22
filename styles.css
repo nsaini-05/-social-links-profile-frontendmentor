@@ -1,0 +1,94 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --primary: hsl(75, 94%, 57%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  background-color: var(--off-black);
+}
+
+.card-container {
+  width: 38.3rem;
+  height: 60.8rem;
+  background: var(--dark-grey);
+  border-radius: 8px;
+  padding: 3.9rem;
+}
+
+.profile-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.8rem;
+}
+
+.profile-image {
+  width: 8.8rem;
+  border-radius: 50%;
+}
+
+.userName {
+  color: var(--white);
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.location {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 2.8rem;
+}
+
+.quote {
+  display: block;
+  text-align: center;
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 2.6rem;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  color: var(--white);
+  gap: 1.6rem;
+}
+
+.list-item {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 1.4rem;
+  background-color: var(--grey);
+  border-radius: 5px;
+}
+
+.list-item:hover {
+  background-color: var(--primary);
+  color: var(--dark-grey);
+}
